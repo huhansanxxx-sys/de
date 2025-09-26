@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homeoffice-Mitarbeiter (m/w/d) - Remote Job</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- 自定义样式配置 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#25D366', // WhatsApp绿色主色调
+                        secondary: '#1E88E5', // 蓝色辅助色
+                        dark: '#1A202C',
+                        light: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-dark">
+    <!-- 顶部导航栏 -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-primary flex items-center">
+                <i class="fa fa-briefcase mr-2"></i>
+                <span>RemoteJobs</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#job-details" class="hover:text-primary transition-colors">Job Details</a>
+                <a href="#benefits" class="hover:text-primary transition-colors">Benefits</a>
+                <a href="#apply" class="hover:text-primary transition-colors">Apply Now</a>
+            </div>
+            <button class="md:hidden text-dark text-xl">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section class="bg-gradient-to-r from-secondary to-primary text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4 text-shadow">Homeoffice-Mitarbeiter (m/w/d)</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Flexible Arbeit von zu Hause aus mit täglicher Auszahlung – Mach deinen Alltag unabhängiger!</p>
+            <!-- WhatsApp 申请按钮 -->
+            <a href="https://diversion.salesmartly.com/split/whatsapp/faf16c" target="_blank" rel="noopener" 
+               class="inline-flex items-center bg-white text-primary font-bold py-4 px-8 rounded-full text-lg md:text-xl shadow-lg hover:shadow-xl transition-all">
+                <i class="fa fa-whatsapp mr-3 text-xl"></i>
+                Jetzt bewerben!
+            </a>
+        </div>
+    </section>
+
+    <!-- 工作核心信息 -->
+    <section id="job-details" class="py-12 md:py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-dark">Job Highlights</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- 薪资卡片 -->
+                <div class="bg-light p-8 rounded-xl shadow-md card-hover">
+                    <div class="text-primary text-5xl mb-4 text-center">
+                        <i class="fa fa-money"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center">300–800 EUR pro Tag</h3>
+                    <p class="text-gray-600 text-center">Tägliche Auszahlung direkt auf dein Konto</p>
+                </div>
+
+                <!-- 工作地点卡片 -->
+                <div class="bg-light p-8 rounded-xl shadow-md card-hover">
+                    <div class="text-primary text-5xl mb-4 text-center">
+                        <i class="fa fa-home"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center">100% Homeoffice</h3>
+                    <p class="text-gray-600 text-center">Arbeite von überall – keine Ortsgebundenheit</p>
+                </div>
+
+                <!-- 工作时间卡片 -->
+                <div class="bg-light p-8 rounded-xl shadow-md card-hover">
+                    <div class="text-primary text-5xl mb-4 text-center">
+                        <i class="fa fa-clock-o"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center">Flexible Arbeitszeiten</h3>
+                    <p class="text-gray-600 text-center">Gestalte deinen Arbeitstag nach deinen Wünschen</p>
+                </div>
+
+                <!-- 团队卡片 -->
+                <div class="bg-light p-8 rounded-xl shadow-md card-hover">
+                    <div class="text-primary text-5xl mb-4 text-center">
+                        <i class="fa fa-globe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center">Internationales Team</h3>
+                    <p class="text-gray-600 text-center">Zusammenarbeit mit Kollegen aus aller Welt</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 工作福利 -->
+    <section id="benefits" class="py-12 md:py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-dark">Warum diese Stelle?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="text-secondary text-2xl mb-3">
+                        <i class="fa fa-check-circle"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Sofortige Einstellung</h3>
+                    <p class="text-gray-600 text-sm">Keine langen Wartezeiten – Starte innerhalb von 48 Stunden mit der Arbeit.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="text-secondary text-2xl mb-3">
+                        <i class="fa fa-check-circle"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Grundausbildung</h3>
+                    <p class="text-gray-600 text-sm">Komplette Einarbeitung kostenlos – Auch ohne Vorkenntnisse möglich.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="text-secondary text-2xl mb-3">
+                        <i class="fa fa-check-circle"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Flexible Stunden</h3>
+                    <p class="text-gray-600 text-sm">Arbeite 2-8 Stunden täglich – Passend zu deinem Privatleben.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="text-secondary text-2xl mb-3">
+                        <i class="fa fa-check-circle"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Tägliche Auszahlung</h3>
+                    <p class="text-gray-600 text-sm">Erlöse werden täglich überwiesen – Keine Monatswartezeiten.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="text-secondary text-2xl mb-3">
+                        <i class="fa fa-check-circle"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Unterstützung</h3>
+                    <p class="text-gray-600 text-sm">24/7 Team-Support für alle Fragen während der Arbeit.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="text-secondary text-2xl mb-3">
+                        <i class="fa fa-check-circle"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Karriereaufstieg</h3>
+                    <p class="text-gray-600 text-sm">Möglichkeit zur Übernahme von Führungsfunktionen mit höherem Einkommen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 申请区域 -->
+    <section id="apply" class="py-12 md:py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Bereit, zu starten?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Wir suchen motivierte Menschen, die flexibel arbeiten und täglich verdienen wollen – Egal ob als Nebenjob oder Vollzeit!</p>
+            
+            <!-- 主要申请按钮 -->
+            <a href="https://diversion.salesmartly.com/split/whatsapp/faf16c" target="_blank" rel="noopener" 
+               class="inline-flex items-center bg-white text-primary font-bold py-5 px-10 rounded-full text-xl shadow-xl hover:shadow-2xl transition-all mb-4">
+                <i class="fa fa-whatsapp mr-3 text-2xl"></i>
+                Jetzt direkt bewerben
+            </a>
+            
+            <p class="text-white/80">Die Bewerbung dauert nur 5 Minuten – Wir melden uns umgehend zurück!</p>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section class="py-12 md:py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <h2 class="text-3xl font-bold text-center mb-12 text-dark">Häufig gestellte Fragen</h2>
+            
+            <div class="space-y-6">
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold mb-2">Benötige ich Vorkenntnisse für die Stelle?</h3>
+                    <p class="text-gray-600">Nein, keine Vorkenntnisse sind erforderlich. Wir bieten eine umfassende Grundausbildung an, die dich optimal auf die Arbeit vorbereitet.</p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold mb-2">Wie funktioniert die tägliche Auszahlung?</h3>
+                    <p class="text-gray-600">Die verdienten Gelder werden täglich um 18:00 Uhr auf dein angegebenes Bankkonto überwiesen. Für die erste Auszahlung benötigst du nur deinen Kontoauszug.</p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold mb-2">Wie viele Stunden muss ich pro Tag arbeiten?</h3>
+                    <p class="text-gray-600">Du bestimmst selbst die Arbeitsstunden – zwischen 2 und 8 Stunden pro Tag. Es gibt keine Mindeststundenpflicht, sodass du die Arbeit flexibel in deinen Alltag integrieren kannst.</p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold mb-2">Welche Geräte benötige ich für die Homeoffice-Arbeit?</h3>
+                    <p class="text-gray-600">Du benötigst lediglich einen Computer (Laptop oder Desktop) mit Internetverbindung. Zusätzliche Software wird von uns kostenlos zur Verfügung gestellt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="text-xl font-bold flex items-center">
+                        <i class="fa fa-briefcase mr-2 text-primary"></i>
+                        <span>RemoteJobs</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-2">Flexible Remote-Arbeit für mehr Freiheit</p>
+                </div>
+                
+                <div class="flex space-x-4">
+                    <a href="https://diversion.salesmartly.com/split/whatsapp/faf16c" target="_blank" rel="noopener" class="text-white hover:text-primary transition-colors">
+                        <i class="fa fa-whatsapp text-xl"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-primary transition-colors">
+                        <i class="fa fa-envelope text-xl"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-primary transition-colors">
+                        <i class="fa fa-phone text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400 text-sm">
+                <p>© 2024 RemoteJobs. Alle Rechte vorbehalten. Datenschutz | Impressum</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript 功能 -->
+    <script>
+        // 回到顶部按钮
+        const backToTopBtn = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'invisible');
+                backToTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopBtn.classList.remove('opacity-100', 'visible');
+                backToTopBtn.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
